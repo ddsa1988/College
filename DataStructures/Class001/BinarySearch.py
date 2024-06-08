@@ -1,23 +1,24 @@
 import random
 
 
-def binary_search(collection, item):
-    if not isinstance(collection, list):
+# Big-O Binary Search is O(log n).
+def binary_search(data, item):
+    if not isinstance(data, list):
         return -1
 
-    collection.sort()
+    data.sort()
 
     start = 0
-    end = len(collection)
+    end = len(data)
 
     while start <= end:
         mid = int((start + end) / 2)
 
-        if not isinstance(item, type(collection[mid])):
+        if not isinstance(item, type(data[mid])):
             break
-        elif item > collection[mid]:
+        elif item > data[mid]:
             start = mid + 1
-        elif item < collection[mid]:
+        elif item < data[mid]:
             end = mid - 1
         else:
             return mid

@@ -1,11 +1,12 @@
-def merge_sort(collection):
-    if not isinstance(collection, list):
-        return collection
+# Big-O Merge Sort is O(n.log n).
+def merge_sort(data):
+    if not isinstance(data, list):
+        return data
 
-    if len(collection) > 1:
-        mid = int(len(collection) / 2)
-        left = collection[0:mid]
-        right = collection[mid:len(collection)]
+    if len(data) > 1:
+        mid = int(len(data) / 2)
+        left = data[0:mid]
+        right = data[mid:len(data)]
 
         merge_sort(left)
         merge_sort(right)
@@ -14,20 +15,20 @@ def merge_sort(collection):
 
         while i < len(left) and j < len(right):
             if left[i] < right[j]:
-                collection[k] = left[i]
+                data[k] = left[i]
                 i += 1
             else:
-                collection[k] = right[j]
+                data[k] = right[j]
                 j += 1
             k += 1
 
         while i < len(left):
-            collection[k] = left[i]
+            data[k] = left[i]
             i += 1
             k += 1
 
         while j < len(right):
-            collection[k] = right[j]
+            data[k] = right[j]
             j += 1
             k += 1
 
