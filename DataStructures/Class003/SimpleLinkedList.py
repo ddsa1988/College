@@ -1,4 +1,10 @@
-﻿from Node import Node
+﻿class Node:
+    def __init__(self, element=None):
+        self.element = element
+        self.next = None
+
+    def __repr__(self):
+        return self.element
 
 
 class LinkedList:
@@ -96,3 +102,16 @@ class LinkedList:
             current = current.next
 
         return "List => " + ", ".join(nodes)
+
+
+my_list = LinkedList()
+my_list.push(Node("Diego"))
+my_list.push(Node("Amanda"))
+my_list.push(Node("Rodrigo"))
+
+print(my_list)
+my_list.remove("Amanda")
+print(my_list)
+print(my_list.size())
+my_list.insert_at("Tainara", 1)
+print(my_list)
