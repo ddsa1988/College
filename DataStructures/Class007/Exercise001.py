@@ -1,4 +1,5 @@
 ﻿from LinkedList import LinkedList
+from CardColor import CardColor
 
 
 def main_menu():
@@ -41,14 +42,14 @@ def add_patient():
     while True:
         card_type = input("Card color? (G or Y): ").upper()
 
-        if not is_card_type_valid(card_type, CARD_TYPE_GREEN, CARD_TYPE_YELLOW):
+        if not is_card_type_valid(card_type, CardColor.GREEN.value, CardColor.YELLOW.value):
             print("Invalid card type.")
             continue
 
         while True:
             card_number = int(input("Card number: "))
 
-            if card_type == CARD_TYPE_GREEN:
+            if card_type == CardColor.GREEN.value:
                 if is_card_number_valid(card_number, GREEN_CARD_MIN_VALUE, GREEN_CARD_MAX_VALUE):
                     break
             else:
@@ -76,8 +77,6 @@ GREEN_CARD_MIN_VALUE = 1
 GREEN_CARD_MAX_VALUE = 200
 YELLOW_CARD_MIN_VALUE = 201
 YELLOW_CARD_MAX_VALUE = 400
-CARD_TYPE_GREEN = 'G'
-CARD_TYPE_YELLOW = 'Y'
 
 simple_list = LinkedList()
 
@@ -94,3 +93,4 @@ while True:
             call_patient()
         case 4:
             break
+

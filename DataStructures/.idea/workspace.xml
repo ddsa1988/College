@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4a7843e-feaa-4186-9f35-72ea168065ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class007/HashTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class007/Exercise002.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class007/LinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class007/Exercise001.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class007/Exercise001.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class007/Exercise001.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +33,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.BubbleSort.executor": "Run",
+    "Python.Exercise001.executor": "Run",
     "Python.LinkedList.executor": "Run",
     "Python.MergeSort.executor": "Run",
     "Python.QuickSort.executor": "Run",
@@ -53,7 +52,7 @@
       <recent name="$PROJECT_DIR$/Class001" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.SimpleLinkedList">
+  <component name="RunManager">
     <configuration name="BubbleSort" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataStructures" />
       <option name="ENV_FILES" value="" />
@@ -154,7 +153,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-48aec45f0201-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17011.127" />
+        <option value="bundled-python-sdk-5b207ade9991-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17890.14" />
       </set>
     </attachedChunks>
   </component>
