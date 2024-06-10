@@ -9,7 +9,7 @@ def binary_search(data, item):
     data.sort()
 
     start = 0
-    end = len(data)
+    end = len(data) - 1
 
     while start <= end:
         mid = int((start + end) / 2)

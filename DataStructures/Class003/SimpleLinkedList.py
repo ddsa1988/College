@@ -12,7 +12,8 @@ class LinkedList:
         self.head = None
         self.count = 0
 
-    def push(self, new_node):
+    def push(self, element):
+        new_node = Node(element)
         current = self.head
 
         if self.head is None:
@@ -61,8 +62,8 @@ class LinkedList:
 
         return None
 
-    def remove(self, node):
-        index = self.index_of(node)
+    def remove(self, element):
+        index = self.index_of(element)
         return self.remove_at(index)
 
     def index_of(self, element):
@@ -94,6 +95,9 @@ class LinkedList:
         return self.size() == 0
 
     def __repr__(self):
+        if self.is_empty():
+            return ""
+
         current = self.head
         nodes = []
 
@@ -101,13 +105,13 @@ class LinkedList:
             nodes.append(current.element)
             current = current.next
 
-        return "List => " + ", ".join(nodes)
+        return ", ".join(nodes)
 
 
 my_list = LinkedList()
-my_list.push(Node("Diego"))
-my_list.push(Node("Amanda"))
-my_list.push(Node("Rodrigo"))
+my_list.push("Diego")
+my_list.push("Amanda")
+my_list.push("Rodrigo")
 
 print(my_list)
 my_list.remove("Amanda")

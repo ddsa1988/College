@@ -1,4 +1,5 @@
 ﻿from Node import Node
+from CardColor import CardColor
 
 
 class LinkedList:
@@ -6,80 +7,53 @@ class LinkedList:
         self.head = None
         self.count = 0
 
-    def push(self, new_node):
+    def insert_without_priority(self, element):
+        node = Node(element)
         current = self.head
 
         if self.head is None:
-            self.head = new_node
+            self.head = node
 
         else:
             while current.next is not None:
                 current = current.next
-            current.next = new_node
+            current.next = node
 
         self.count += 1
 
-    def insert_at(self, element, index):
-        if 0 <= index < self.size():
-            node = Node(element)
+    def insert_with_priority(self, element):
+        if self.head is None:
+            self.insert_without_priority(element)
 
-            if index == 0:
-                current = self.head
+        else:
+            node = Node(element)
+            current = self.head
+
+            if current.element.color == CardColor.GREEN.value:
                 node.next = current
                 self.head = node
+
             else:
-                previous = self.get_element_at(index - 1)
-                current = previous.next
-                node.next = current
+                previous = None
+
+                while current is not None and (current.element.color != CardColor.GREEN.value):
+                    previous = current
+                    current = current.next
+
                 previous.next = node
+                node.next = current
 
             self.count += 1
-            return True
 
-        return False
+    def remove(self):
+        if self.is_empty():
+            return None
 
-    def remove_at(self, index):
-        if 0 <= index < self.size():
-            current = self.head
-
-            if index == 0:
-                self.head = current.next
-
-            else:
-                previous = self.get_element_at(index - 1)
-                current = previous.next
-                previous.next = current.next
-
-            self.count -= 1
-            return current.element
-
-        return None
-
-    def remove(self, node):
-        index = self.index_of(node)
-        return self.remove_at(index)
-
-    def index_of(self, element):
         current = self.head
+        self.head = current.next
+        self.count -= 1
 
-        for i in range(self.size()):
-            if current.element == element:
-                return i
-
-            current = current.next
-
-        return -1
-
-    def get_element_at(self, index):
-        if 0 <= index < self.size():
-            current = self.head
-
-            for i in range(index):
-                current = current.next
-
-            return current
-
-        return None
+        return current
 
     def size(self):
         return self.count
@@ -88,11 +62,14 @@ class LinkedList:
         return self.size() == 0
 
     def __repr__(self):
+        if self.is_empty():
+            return ""
+
         current = self.head
         nodes = []
 
         while current is not None:
-            nodes.append(current.element)
+            nodes.append(str(current.element))
             current = current.next
 
-        return "List => " + ", ".join(nodes)
+        return " ".join(nodes)

@@ -1,11 +1,12 @@
-﻿from LinkedList import LinkedList
+from LinkedList import LinkedList
+from Card import Card
 from CardColor import CardColor
 
 
 def main_menu():
     print("1 - Insert patient in the queue")
     print("2 - Show patients in the queue")
-    print("3 - Call patient from teh queue")
+    print("3 - Call patient from the queue")
     print("4 - Quit")
 
 
@@ -40,7 +41,7 @@ def add_patient():
     card_number = 0
 
     while True:
-        card_type = input("Card color? (G or Y): ").upper()
+        card_type = input(f"Card color? ({CardColor.GREEN.value} or {CardColor.YELLOW.value}): ").upper()
 
         if not is_card_type_valid(card_type, CardColor.GREEN.value, CardColor.YELLOW.value):
             print("Invalid card type.")
@@ -51,9 +52,13 @@ def add_patient():
 
             if card_type == CardColor.GREEN.value:
                 if is_card_number_valid(card_number, GREEN_CARD_MIN_VALUE, GREEN_CARD_MAX_VALUE):
+                    card = Card(CardColor.GREEN.value, card_number)
+                    simple_list.insert_without_priority(card)
                     break
             else:
                 if is_card_number_valid(card_number, YELLOW_CARD_MIN_VALUE, YELLOW_CARD_MAX_VALUE):
+                    card = Card(CardColor.YELLOW.value, card_number)
+                    simple_list.insert_with_priority(card)
                     break
 
             print("Invalid card number.")
@@ -64,11 +69,18 @@ def add_patient():
 
 
 def show_patients():
-    print("Show patients")
+    if simple_list.is_empty():
+        print("There are no patients in the queue")
+    else:
+        print(f"List -> {simple_list}")
 
 
 def call_patient():
-    print("Call patient")
+    if simple_list.is_empty():
+        print("There are no patients in the queue.")
+    else:
+        node = simple_list.remove()
+        print(f"Calling patient card color {node.element.color} and number {node.element.number}")
 
 
 MAIN_MENU_MIN_VALUE = 1
@@ -93,4 +105,3 @@ while True:
             call_patient()
         case 4:
             break
-
