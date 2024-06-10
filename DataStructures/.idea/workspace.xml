@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4a7843e-feaa-4186-9f35-72ea168065ed" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class001/BinarySearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class001/BinarySearch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class003/SimpleLinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class003/SimpleLinkedList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class007/Card.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class007/Card.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class007/Card.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Class007/CardColor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class007/Exercise001.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class007/LinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class007/LinkedList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class007/Exercise001.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class007/Exercise001.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class007/LinkedList.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class007/Node.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +40,7 @@
   "keyToString": {
     "Python.BinarySearch.executor": "Run",
     "Python.BubbleSort.executor": "Run",
+    "Python.Card.executor": "Run",
     "Python.Exercise001 (1).executor": "Debug",
     "Python.Exercise001.executor": "Run",
     "Python.LinkedList.executor": "Run",
@@ -138,7 +139,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5b207ade9991-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17890.14" />
+        <option value="bundled-python-sdk-48aec45f0201-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17011.127" />
       </set>
     </attachedChunks>
   </component>
