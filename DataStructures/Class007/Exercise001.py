@@ -98,7 +98,7 @@ class SimpleLinkedList:
         nodes = []
 
         while current is not None:
-            nodes.append(str(current.element))
+            nodes.append(str(current.key))
             current = current.next
 
         return " ".join(nodes)
