@@ -32,8 +32,8 @@ tree.insert(25)
 tree.insert(6)
 
 
-def user_print(value):
+def print_node(value):
     print(value)
 
 
-tree.in_order_traverse(user_print)
+tree.in_order_traverse(print_node)
