@@ -1,4 +1,5 @@
 ﻿from BinarySearchTree import BST
+from PrintNode import print_node
 from Person import Person
 
 tree = BST()
@@ -30,11 +31,6 @@ tree.insert(20)
 tree.insert(18)
 tree.insert(25)
 tree.insert(6)
-
-
-def print_node(value):
-    print(value, end=" ")
-
 
 print("In-order: ", end=" ")
 tree.in_order_traverse(print_node)

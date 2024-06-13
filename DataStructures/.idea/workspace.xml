@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4a7843e-feaa-4186-9f35-72ea168065ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/DataStructures.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DataStructures.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class004/BinarySearchTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class004/BinarySearchTree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class004/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class004/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class004/AVLTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class004/AVLTree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class004/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class004/MainBST.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +43,7 @@
     "Python.Exercise001.executor": "Run",
     "Python.LinkedList.executor": "Run",
     "Python.Main.executor": "Run",
+    "Python.MainAVL.executor": "Run",
     "Python.MergeSort.executor": "Run",
     "Python.QuickSort.executor": "Run",
     "Python.SimpleLinkedList.executor": "Run",
@@ -65,7 +64,7 @@
       <recent name="C:\Users\Diego Alexandre\Documents\College\DataStructures\Class004" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager">
     <configuration name="BinarySearchTree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataStructures" />
       <option name="ENV_FILES" value="" />
@@ -110,7 +109,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="MainBST" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataStructures" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,7 +122,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Class004/Main.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Diego Alexandre\Documents\College\DataStructures\Class004\MainBST.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -178,7 +177,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Main" />
+        <item itemvalue="Python.MainBST" />
         <item itemvalue="Python.BinarySearchTree" />
         <item itemvalue="Python.BubbleSort" />
         <item itemvalue="Python.SimpleLinkedList" />
