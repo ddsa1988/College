@@ -39,15 +39,20 @@ def print_node(value):
 print("In-order: ", end=" ")
 tree.in_order_traverse(print_node)
 
-print("\nPre-order: ", end=" ")
-tree.pre_order_traverse(print_node)
+# print("\nPre-order: ", end=" ")
+# tree.pre_order_traverse(print_node)
+#
+# print("\nPost-order: ", end=" ")
+# tree.post_order_traverse(print_node)
+#
+# print()
+# print(f"Min: {tree.min()}")
+# print(f"Max: {tree.max()}")
+#
+# print(tree.search(18))
+# print(tree.search(100))
 
-print("\nPost-order: ", end=" ")
-tree.post_order_traverse(print_node)
-
+tree.remove(13)
 print()
-print(f"Min: {tree.min()}")
-print(f"Max: {tree.max()}")
-
-print(tree.search(18))
-print(tree.search(100))
+print("In-order: ", end=" ")
+tree.in_order_traverse(print_node)

@@ -3,8 +3,8 @@
 
 class BST:
 
-    def __init__(self, key=None):
-        self.__root = key
+    def __init__(self):
+        self.__root = None
 
     def insert(self, key):
         if self.__root is None:
@@ -92,3 +92,45 @@ class BST:
             return self.__search_node(node.right, key)
         else:
             return True
+
+    def remove(self, key):
+        self.__root = self.__remove_node(self.__root, key)
+
+    def __remove_node(self, node, key):
+        if node is None:
+            return None
+
+        if not isinstance(key, type(node.key)):
+            return None
+
+        if key < node.key:
+            node.left = self.__remove_node(node.left, key)
+            return node
+        elif key > node.key:
+            node.right = self.__remove_node(node.right, key)
+            return node
+        else:
+            if node.left is None and node.right is None:
+                node = None
+                return node
+
+            if node.left is None:
+                node = node.right
+                return node
+
+            elif node.right is None:
+                node = node.left
+                return node
+
+            aux = self.__min_node(node.right)
+            node.key = aux.key
+            node.right = self.__remove_node(node.right, aux.key)
+            return node
+
+    def __min_node(self, node):
+        current = node
+
+        while current is not None and current.left is not None:
+            current = current.left
+
+        return current
