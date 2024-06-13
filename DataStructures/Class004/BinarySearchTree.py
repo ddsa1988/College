@@ -35,3 +35,60 @@ class BST:
             self.__in_order_traverse_node(node.left, callback)
             callback(node.key)
             self.__in_order_traverse_node(node.right, callback)
+
+    def pre_order_traverse(self, callback):
+        self.__pre_order_traverse_node(self.__root, callback)
+
+    def __pre_order_traverse_node(self, node, callback):
+        if node is not None:
+            callback(node.key)
+            self.__pre_order_traverse_node(node.left, callback)
+            self.__pre_order_traverse_node(node.right, callback)
+
+    def post_order_traverse(self, callback):
+        self.__post_order_traverse_node(self.__root, callback)
+
+    def __post_order_traverse_node(self, node, callback):
+        if node is not None:
+            self.__post_order_traverse_node(node.left, callback)
+            self.__post_order_traverse_node(node.right, callback)
+            callback(node.key)
+
+    def min(self):
+        return self.__min_value(self.__root)
+
+    def __min_value(self, node):
+        current = node
+
+        while current is not None and current.left is not None:
+            current = current.left
+
+        return current.key
+
+    def max(self):
+        return self.__max_value(self.__root)
+
+    def __max_value(self, node):
+        current = node
+
+        while current is not None and current.right is not None:
+            current = current.right
+
+        return current.key
+
+    def search(self, key):
+        return self.__search_node(self.__root, key)
+
+    def __search_node(self, node, key):
+        if node is None:
+            return False
+
+        if not isinstance(key, type(node.key)):
+            return False
+
+        if key < node.key:
+            return self.__search_node(node.left, key)
+        elif key > node.key:
+            return self.__search_node(node.right, key)
+        else:
+            return True

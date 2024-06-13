@@ -8,7 +8,7 @@ tree = BST()
 # p3 = Person("Rodrigo", 30)
 # p4 = Person("Caio", 40)
 # p5 = Person("Zeus", 50)
-#
+# 
 # tree.insert(p1)
 # tree.insert(p2)
 # tree.insert(p3)
@@ -33,7 +33,21 @@ tree.insert(6)
 
 
 def print_node(value):
-    print(value)
+    print(value, end=" ")
 
 
+print("In-order: ", end=" ")
 tree.in_order_traverse(print_node)
+
+print("\nPre-order: ", end=" ")
+tree.pre_order_traverse(print_node)
+
+print("\nPost-order: ", end=" ")
+tree.post_order_traverse(print_node)
+
+print()
+print(f"Min: {tree.min()}")
+print(f"Max: {tree.max()}")
+
+print(tree.search(18))
+print(tree.search(100))
