@@ -58,7 +58,7 @@ class LinkedList:
                 previous.next = current.next
 
             self.count -= 1
-            return current.key
+            return current.element
 
         return None
 
@@ -70,7 +70,7 @@ class LinkedList:
         current = self.head
 
         for i in range(self.size()):
-            if current.key == element:
+            if current.element == element:
                 return i
 
             current = current.next
@@ -102,7 +102,7 @@ class LinkedList:
         nodes = []
 
         while current is not None:
-            nodes.append(current.key)
+            nodes.append(str(current.element))
             current = current.next
 
         return ", ".join(nodes)

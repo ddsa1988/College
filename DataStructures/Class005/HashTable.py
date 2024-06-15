@@ -9,4 +9,10 @@ def hash_func_number(key, size):
 
 
 def hash_func_digits(key, size):
-    pass
+    if not (isinstance(key, str) and isinstance(size, int)):
+        return -1
+
+    if len(key) != 2:
+        return -1
+
+    return (ord(key[0]) + ord(key[1])) % size

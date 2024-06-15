@@ -23,7 +23,7 @@ class Card:
 
 
 class Node:
-    def __init__(self, element=None):
+    def __init__(self, element):
         self.element = element
         self.next = None
 
@@ -98,7 +98,7 @@ class SimpleLinkedList:
         nodes = []
 
         while current is not None:
-            nodes.append(str(current.key))
+            nodes.append(str(current.element))
             current = current.next
 
         return " ".join(nodes)
