@@ -33,8 +33,8 @@ def merge_sort(data):
             k += 1
 
 
-dataNumbers = [54, 26, 93, 17, 77, 31, 44, 19, 55]
+data_numbers = [54, 26, 93, 17, 77, 31, 44, 19, 55]
 
-print(f"Before merge sort: {dataNumbers}")
-merge_sort(dataNumbers)
-print(f"After merge sort: {dataNumbers}")
+print(f"Before merge sort: {data_numbers}")
+merge_sort(data_numbers)
+print(f"After merge sort: {data_numbers}")

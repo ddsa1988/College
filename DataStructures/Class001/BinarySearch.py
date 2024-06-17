@@ -26,9 +26,9 @@ def binary_search(data, item):
     return -1
 
 
-dataNumbers = random.sample(range(10), 10)
-dataStrings = ["Amanda", "Diego", "Rodrigo", "Zeus"]
+data_numbers = random.sample(range(10), 10)
+data_strings = ["Amanda", "Diego", "Rodrigo", "Zeus"]
 
-print(binary_search(dataNumbers, 6))
-print(binary_search(dataStrings, "Zeus"))
-print(binary_search(dataStrings, "Diego"))
+print(binary_search(data_numbers, 6))
+print(binary_search(data_strings, "Zeus"))
+print(binary_search(data_strings, "Diego"))

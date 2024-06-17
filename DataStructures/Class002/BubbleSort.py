@@ -25,15 +25,15 @@ def bubble_sort(data):
     return data
 
 
-dataNumbers = random.sample(range(10), 10)
-dataStrings = ["Rodrigo", "Zeus", "Diego", "Amanda"]
+data_numbers = random.sample(range(10), 10)
+data_strings = ["Rodrigo", "Zeus", "Diego", "Amanda"]
 
-print(f"Before bubble sort: {dataNumbers}")
-print(f"Before bubble sort: {dataStrings}")
+print(f"Before bubble sort: {data_numbers}")
+print(f"Before bubble sort: {data_strings}")
 print()
 
-bubble_sort(dataNumbers)
-bubble_sort(dataStrings)
+bubble_sort(data_numbers)
+bubble_sort(data_strings)
 
-print(f"After bubble sort: {dataNumbers}")
-print(f"After bubble sort: {dataStrings}")
+print(f"After bubble sort: {data_numbers}")
+print(f"After bubble sort: {data_strings}")

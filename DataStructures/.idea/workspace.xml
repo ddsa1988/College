@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4a7843e-feaa-4186-9f35-72ea168065ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class003/SimpleLinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class003/SimpleLinkedList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class005/HashTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class005/HashTable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class005/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class005/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class007/Exercise001.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class007/Exercise001.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class007/Exercise002.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class007/Exercise002.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class001/BinarySearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class001/BinarySearch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class002/BubbleSort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class002/BubbleSort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class002/MergeSort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class002/MergeSort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class002/QuickSort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class002/QuickSort.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,29 +34,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.BinarySearch.executor": "Run",
-    "Python.BinarySearchTree.executor": "Run",
-    "Python.BinaryTree.executor": "Run",
-    "Python.BubbleSort.executor": "Run",
-    "Python.Card.executor": "Run",
-    "Python.Exercise001 (1).executor": "Debug",
-    "Python.Exercise001.executor": "Run",
-    "Python.Exercise002.executor": "Run",
-    "Python.LinkedList.executor": "Run",
-    "Python.Main.executor": "Run",
-    "Python.MainAVL.executor": "Run",
-    "Python.MergeSort.executor": "Run",
-    "Python.QuickSort.executor": "Run",
-    "Python.SimpleLinkedList.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Diego Alexandre/Documents/College/DataStructures/Class007",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.BinarySearch.executor&quot;: &quot;Run&quot;,
+    &quot;Python.BinarySearchTree.executor&quot;: &quot;Run&quot;,
+    &quot;Python.BinaryTree.executor&quot;: &quot;Run&quot;,
+    &quot;Python.BubbleSort.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Card.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Exercise001 (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Python.Exercise001.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Exercise002.executor&quot;: &quot;Run&quot;,
+    &quot;Python.LinkedList.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.MainAVL.executor&quot;: &quot;Run&quot;,
+    &quot;Python.MergeSort.executor&quot;: &quot;Run&quot;,
+    &quot;Python.QuickSort.executor&quot;: &quot;Run&quot;,
+    &quot;Python.SimpleLinkedList.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Diego Alexandre/Documents/College/DataStructures/Class007&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Diego Alexandre\Documents\College\DataStructures\Class007" />

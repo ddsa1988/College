@@ -27,8 +27,8 @@ def partition(data, start, end):
     return right
 
 
-dataNumbers = [54, 26, 93, 17, 77, 31, 44, 19, 55]
+data_numbers = [54, 26, 93, 17, 77, 31, 44, 19, 55]
 
-print(f"Before quick sort: {dataNumbers}")
-quick_sort(dataNumbers, 0, len(dataNumbers) - 1)
-print(f"After quick sort: {dataNumbers}")
+print(f"Before quick sort: {data_numbers}")
+quick_sort(data_numbers, 0, len(data_numbers) - 1)
+print(f"After quick sort: {data_numbers}")
